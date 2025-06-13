@@ -5,13 +5,8 @@
                 <h2 class="text-white text-2xl font-bold">Languages</h2>
             </div>
             <ul class="w-full space-y-4">
-                <x-language-card :progress="65"></x-language-card>
-                <x-language-card :progress="5"></x-language-card>
-                <x-language-card :progress="32"></x-language-card>
                 @foreach ($languages as $language)
-                    <li>
-                        <a href="#" class="block"></a>
-                    </li>
+                    <x-language-card :language-name="$language->name" :progress="65"></x-language-card>
                 @endforeach
             </ul>
         </div>
