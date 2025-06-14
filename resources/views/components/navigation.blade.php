@@ -15,12 +15,21 @@
             'icon' => 'learn',
             'href' => 'languages',
         ],
-        [
+    ];
+
+    if (Auth::check()) {
+        array_push($links, [
+            'label' => Auth::user()->name,
+            'icon' => 'profile',
+            'href' => 'javascript:void(0)',
+        ]);
+    } else {
+        array_push($links, [
             'label' => 'Sign In',
             'icon' => 'profile',
             'href' => 'sign-in',
-        ],
-    ];
+        ]);
+    }
 @endphp
 
 <nav class="w-full flex bg-sky-800 items-center px-10 py-5">

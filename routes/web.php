@@ -14,6 +14,10 @@ Route::get('/dashboard', function () {
 });
 
 Route::get('/sign-in', [UserController::class, 'sign_in']);
+Route::get('/register', [UserController::class, 'sign_up']);
+
+Route::post('/users/register', [UserController::class, 'attempt_register']);
+Route::post('/users/sign-in', [UserController::class, 'attempt_login']);
 
 Route::get('/languages', [LanguageController::class, 'list']);
 Route::post('/languages', [LanguageController::class, 'store']);

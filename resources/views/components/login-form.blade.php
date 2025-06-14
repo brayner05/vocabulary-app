@@ -1,6 +1,6 @@
 <div class="text-white bg-sky-950 space-y-7 p-10 rounded-lg border-2 border-sky-700">
     <h3 class="font-bold text-2xl">Sign In</h3>
-    <form action="/sign_in" method="POST" class="flex flex-col items-center space-y-5">
+    <form action="/users/sign-in" method="POST" class="flex flex-col items-center space-y-5">
         @csrf
         <div class="space-y-3">
             <label for="email" class="block text-sm text-white font-semibold">Email</label>
