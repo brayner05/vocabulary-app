@@ -3,7 +3,7 @@
 
 
 <li
-    class="p-5 border-2 border-sky-800 bg-sky-950 hover:opacity-80 duration-300 transition-opacity rounded-lg shadow-xs shadow-zinc-900">
+    class="p-8 border-2 border-sky-800 bg-sky-950 hover:opacity-80 duration-300 transition-opacity rounded-lg shadow-xs shadow-zinc-900">
     <a href="@" class="block text-white text-lg font-semibold space-y-10">
         <p>{{ $languageName }}</p>
         {{-- Progress bar --}}

@@ -1,6 +1,11 @@
 <x-layout title="Home">
-    <div class="p-15">
-        <h2 class="text-white text-3xl uppercase font-black">Studying vocabulary made easy!</h2>
+    <div class="p-15 flex">
+        <div class="flex-1">
+            <h2 class="text-white text-3xl uppercase font-black">Studying vocabulary made easy!</h2>
+        </div>
+        <div class="flex-1">
+            <x-login-form></x-login-form>
+        </div>
     </div>
     <div class="custom-shape-divider-bottom-1749837003">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

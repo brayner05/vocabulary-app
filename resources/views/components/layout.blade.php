@@ -15,7 +15,7 @@
 </head>
 
 <body class="font-[Montserrat]">
-    <div class="w-full min-h-screen flex flex-col">
+    <div class="w-full min-h-screen flex flex-col select-none">
         <x-navigation></x-navigation>
         <main class="flex-1 bg-sky-900">
             {{ $slot }}
